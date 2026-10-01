@@ -1,0 +1,18 @@
+{
+    "editor.guides.indentation": false,
+    "editor.guides.bracketPairs": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.rulers": [],
+    "editor.renderLineHighlight": "none",
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "editor.minimap.enabled": false,
+    "editor.overviewRulerBorder": false,
+    "[cpp]": {
+        "editor.formatOnSave": false,
+        "editor.formatOnPaste": false,
+        "editor.formatOnType": false
+    }
+}

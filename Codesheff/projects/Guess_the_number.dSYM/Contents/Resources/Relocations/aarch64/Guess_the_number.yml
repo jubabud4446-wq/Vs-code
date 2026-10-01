@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/jubaer/VS code/Codesheff/projects/Guess_the_number'
+relocations:     []
+...

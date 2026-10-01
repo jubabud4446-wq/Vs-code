@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "xaver.clang-format",
+        "eamodio.gitlens",
+        "vscode-icons-team.vscode-icons",
+        "esbenp.prettier-vscode",
+        "coenraads.bracket-pair-colorizer-2"
+    ],
+    "unwantedRecommendations": []
+}

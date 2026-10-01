@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"e:\\Vs Code\\phitron\\Module 6.5\\A. Winter_Sale.c","tests":[{"id":1760720506287,"input":"20 80","output":"100.00"},{"id":1760720515902,"input":"15 20","output":"23.53"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Vs Code\\phitron\\Module 6.5\\A. Winter_Sale.c","group":"local","local":true}

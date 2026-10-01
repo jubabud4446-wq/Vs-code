@@ -1,0 +1,65 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<pair<int, int>> adj[10001];
+int dis[10001];
+
+void dijkstra(int src)
+{
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
+    q.push({0, src});
+    dis[src] = 0;
+    while (!q.empty())
+    {
+        pair<int, int> par = q.top();
+        q.pop();
+        int par_dis = par.first;
+        int par_node = par.second;
+
+        if (par_dis > dis[par_node])
+            continue;
+
+        for(auto child : adj[par_node])
+        {
+            int child_node = child.first;
+            int child_dis = child.second;
+
+            if (par_dis + child_dis < dis[child_node])
+            {
+                dis[child_node] = par_dis + child_dis;
+                q.push({dis[child_node], child_node});
+            }
+        } 
+    }
+}
+
+int main()
+{
+    int n, e;
+    cin >> n >> e;
+    while (e--)
+    {
+        int a, b, c;
+        cin >> a >> b >> c;
+
+        // for undirected graph
+        adj[a].push_back({b, c});
+        adj[b].push_back({a, c});
+
+        // for directed graph
+        // adj[a].push_back({b, c});
+    }
+
+    for(int i = 0; i < n; i++)
+    {
+        dis[i] = INT_MAX;
+    }
+
+    dijkstra(0);
+
+    for(int i = 0; i < n; i++)
+    {
+        cout << dis[i] << " ";
+    }
+    return 0;
+}

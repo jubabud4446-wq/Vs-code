@@ -1,0 +1,85 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file",
+            "command": "g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: g++.exe"
+        }
+        ,
+        {
+            "type": "shell",
+            "label": "Run Active File",
+            "command": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "windows": {
+                // Launch using PowerShell in a new window and keep it open, then pause
+                "command": "cmd /c start powershell -NoExit -Command \"& '${fileDirname}\\${fileBasenameNoExtension}.exe'; Read-Host 'Press Enter to exit...'\""
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": true
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        }
+        ,
+        {
+            "type": "shell",
+            "label": "Run Active File (External - PowerShell - Keep Open)",
+            "command": "cmd /c start powershell -NoExit -Command \"& '${fileDirname}\\${fileBasenameNoExtension}.exe'; Read-Host 'Press Enter to exit...'\"",
+            "windows": {
+                "command": "cmd /c start powershell -NoExit -Command \"& '${fileDirname}\\${fileBasenameNoExtension}.exe'; Read-Host 'Press Enter to exit...'\""
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": true
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        }
+        ,
+        {
+            "type": "shell",
+            "label": "Run Active File (Integrated - Keep Open)",
+            "command": "powershell -NoExit -Command \"& '${fileDirname}\\${fileBasenameNoExtension}.exe'; Read-Host 'Press Enter to exit...'\"",
+            "windows": {
+                "command": "powershell -NoExit -Command \"& '${fileDirname}\\${fileBasenameNoExtension}.exe'; Read-Host 'Press Enter to exit...'\""
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "showReuseMessage": true
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        }
+    ]
+}

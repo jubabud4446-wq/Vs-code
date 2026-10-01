@@ -1,0 +1,14 @@
+[
+    {
+        "key": "ctrl+alt+r",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Run Active File (External - PowerShell - Keep Open)",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+t",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Run Active File (Integrated - Keep Open)",
+        "when": "editorTextFocus"
+    }
+]

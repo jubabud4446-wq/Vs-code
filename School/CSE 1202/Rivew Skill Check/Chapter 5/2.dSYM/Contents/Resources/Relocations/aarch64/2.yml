@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/jubaer/VS code/School/CSE 1202/Rivew Skill Check/Chapter 5/2'
+relocations:
+  - { offset: 0x15E83, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x61640, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offset: 0x1611C, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_2.cpp, symObjAddr: 0x15C, symBinAddr: 0x1000007F4, symSize: 0x14 }
+  - { offset: 0x16133, size: 0x8, addend: 0x0, symName: __Z41__static_initialization_and_destruction_0v, symObjAddr: 0x120, symBinAddr: 0x1000007B8, symSize: 0x3C }
+  - { offset: 0x16151, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xD4, symBinAddr: 0x10000077C, symSize: 0x3C }
+  - { offset: 0x1618B, size: 0x8, addend: 0x0, symName: __ZN7myclass3getEv, symObjAddr: 0x58, symBinAddr: 0x100000700, symSize: 0x7C }
+  - { offset: 0x161CB, size: 0x8, addend: 0x0, symName: __ZN7myclassC1Ev, symObjAddr: 0x34, symBinAddr: 0x1000006DC, symSize: 0x24 }
+  - { offset: 0x1621F, size: 0x8, addend: 0x0, symName: __ZN7myclassC1Eii, symObjAddr: 0x0, symBinAddr: 0x1000006A8, symSize: 0x34 }
+...
