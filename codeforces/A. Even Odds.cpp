@@ -3,30 +3,30 @@ using namespace std;
 
 int main()
 {
-    int n, k;
+    long long n, k;
     cin >> n >> k;
 
-    int ans = 0;
+    long long ans = 0;
     
-    int half = 0;
+    long long half = 0;
 
-    if(n%2 == 0)
+    if(n % 2 == 0)
     {
-        half = n/2;
+        half = n / 2;
     }
     else
-        half = (n+1)/2;
+        half = (n + 1) / 2;
 
-    if(k<half)
+    if(k < half)
     {
-        ans = k+(k-1);
+        ans = k + (k - 1);
     }
 
     else if(k == half)
     {
-        if(n%2 == 0)
+        if(n % 2 == 0)
         {
-            cout << n-1 << endl;
+            cout << n - 1 << endl;
             return 0;
         }
         else
@@ -38,10 +38,10 @@ int main()
 
     else
     {
-        k = k-half;
-        ans = 2*k;
+        k = k - half;
+        ans = 2 * k;
     }
 
     cout << ans << endl;
     return 0;
-}   
+}
