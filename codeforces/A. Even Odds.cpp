@@ -3,23 +3,45 @@ using namespace std;
 
 int main()
 {
-    long long int n, k;
+    int n, k;
     cin >> n >> k;
 
-    vector<int> arr;
-    for(long long int i = 1; i <= n; i++)
+    int ans = 0;
+    
+    int half = 0;
+
+    if(n%2 == 0)
     {
-        if(i % 2 != 0)
-            arr.push_back(i);
+        half = n/2;
+    }
+    else
+        half = (n+1)/2;
+
+    if(k<half)
+    {
+        ans = k+(k-1);
     }
 
-    for(long long int i = 1; i <= n; i++)
+    else if(k == half)
     {
-        if(i % 2 == 0)
-            arr.push_back(i);
+        if(n%2 == 0)
+        {
+            cout << n-1 << endl;
+            return 0;
+        }
+        else
+        {
+            cout << n << endl;
+            return 0;
+        }
     }
 
-    cout << arr[k-1] << endl;
+    else
+    {
+        k = k-half;
+        ans = 2*k;
+    }
 
+    cout << ans << endl;
     return 0;
-}
+}   
